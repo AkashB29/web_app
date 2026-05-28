@@ -11,7 +11,7 @@ stage('Install Dependencies'){
                 bat 'npm install'
             }
         }
-        stage('Build Docker Image'){
+        stage('Docker Image'){
             steps{
                 bat 'docker build -t web-app .'
             }
