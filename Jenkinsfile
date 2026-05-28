@@ -6,7 +6,7 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/AkashB29/web_app.git'
             }
         }
-stage('Install Dependencies'){
+        stage('Install Dependencies'){
             steps{
                 bat 'npm install'
             }
