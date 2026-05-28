@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Build Docker Image'){
             steps{
-                bat 'docker build -t web_app:latest .'
+                bat 'docker build -t web_app .'
             }
         }stage('Run Docker Container'){
             steps{
