@@ -12,7 +12,7 @@ pipeline{
             }
         }stage('Run Docker Container'){
             steps{
-                bat 'docker run -d -p 80:80 web_app:latest'
+                bat 'docker run -d -p 8081:80 web_app:latest'
             }
         }
             
